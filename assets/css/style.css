@@ -1,0 +1,47 @@
+body {
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #00c1e0;
+}
+
+.sidebar .block-container {
+    background-color: #e6f7ff;
+}
+
+.sidebar .sidebar-content {
+    color: #ffffff;
+}
+
+.sidebar .sidebar-content {
+    border-top: 3px solid #ffffff;
+}
+
+/* Style de la barre latérale */
+.sidebar .css-1l9djii {
+    background-color: #00c1e0; /* Fond de la barre latérale en bleu (#00c1e0) */
+    color: #ffffff; /* Couleur du texte en blanc (#ffffff) */
+    border-top: 3px solid #ffffff; /* Bordure en haut de la barre latérale en blanc (#ffffff) */
+    padding: 20px; /* Espacement interne de la barre latérale */
+    margin-right: 20px; /* Marge à droite pour l'espacement */
+
+    /* Vous pouvez ajouter d'autres styles personnalisés ici pour la barre latérale */
+}
+
+/* Style des cartes pour les KPI */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Responsive grid pour les graphiques */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
