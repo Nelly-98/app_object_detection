@@ -24,7 +24,7 @@ def generate_sample_data():
     df = pd.DataFrame(data)
     return df
 
-   
+st.sidebar.image("assets/images/logo.png")   
 def main():
     
     st.header('Page d\'accueil')
