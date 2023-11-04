@@ -28,20 +28,3 @@ h1, h2, h3, h4, h5, h6 {
 
     /* Vous pouvez ajouter d'autres styles personnalisés ici pour la barre latérale */
 }
-
-/* Style des cartes pour les KPI */
-.card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
-}
-
-/* Responsive grid pour les graphiques */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}

@@ -4,6 +4,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+
+st.write(
+    f"""
+    <style>
+        {open("assets/css/style.css").read()}
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 def generate_sample_data():
     # Générez des données de déchets à des fins de démonstration
     data = {
@@ -14,10 +24,12 @@ def generate_sample_data():
     df = pd.DataFrame(data)
     return df
 
-def app():
-    st.title('Page d\'accueil')
-    st.write('Bienvenue sur l\'application de détection des déchets sauvages de Mantes-La-Jolie.')
+   
+def main():
     
+    st.header('Page d\'accueil')
+    st.write('Bienvenue sur l\'application de détection des déchets sauvages de Mantes-La-Jolie.')
+        
     # Ici, vous pouvez ajouter des statistiques ou des graphiques résumant les données
     st.write('Statistiques et informations récentes...')
 
@@ -38,7 +50,7 @@ def app():
 
     # Graphiques et comptes
     st.header('Graphiques et Comptes')
-    
+        
     # Graphique à barres montrant la répartition des types de déchets
     st.subheader('Répartition des Types de Déchets')
     df['Type de déchet'].value_counts().plot(kind='bar')
@@ -52,7 +64,7 @@ def app():
 
     # Rapports de tendances
     st.header('Rapports de Tendances')
-    
+        
     # Aperçu des tendances de déchets dans différentes zones
     st.subheader('Tendances de Déchets par Zone')
     trend_data = df.groupby(['Date', 'Zone'])['Type de déchet'].count().unstack().fillna(0)
@@ -72,4 +84,5 @@ def app():
 
     st.set_option('deprecation.showPyplotGlobalUse', False)
 
-   
+if __name__ == "__main__":
+    main()
